@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Leozz.Web", "Com.Leozz.Web\Com.Leozz.Web.csproj", "{FB379016-283A-4C51-A57A-BF663F708731}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Leozz.Web.Tests", "Com.Leozz.Web.Tests\Com.Leozz.Web.Tests.csproj", "{6A9278B8-3300-44FF-B4FD-C242F7BFF675}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FB379016-283A-4C51-A57A-BF663F708731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB379016-283A-4C51-A57A-BF663F708731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB379016-283A-4C51-A57A-BF663F708731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9278B8-3300-44FF-B4FD-C242F7BFF675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9278B8-3300-44FF-B4FD-C242F7BFF675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9278B8-3300-44FF-B4FD-C242F7BFF675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9278B8-3300-44FF-B4FD-C242F7BFF675}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
