@@ -18,7 +18,7 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: |
-          echo ${{ toJSON(github) }}
+          echo $GITHUB_CONTEXT
       - name: Print secrets context
         run: |
           echo ${{ toJSON(secrets) }}
