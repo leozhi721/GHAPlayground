@@ -3,7 +3,7 @@
 
 name: .NET Build And Test
 # run-name: ${{ github.actor }} is running .NET Build And Test
-run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
+run-name: ${{ github.event_name }} to ${{ github.head_ref }} by @${{ github.actor }}
 
 on:
   push:
