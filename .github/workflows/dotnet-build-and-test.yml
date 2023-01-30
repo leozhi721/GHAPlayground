@@ -15,13 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print github context
-        env:
-          GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: |
-          echo $EVENT_CONTEXT
+          echo ${{ toJSON(github) }}
       - name: Print secrets context
         run: |
-          echo ${{ secrets }}
+          echo ${{ toJSON(secrets) }}
 
   build-and-test:
     runs-on: ubuntu-latest
