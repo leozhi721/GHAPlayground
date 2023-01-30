@@ -2,7 +2,7 @@
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
 name: .NET Build And Test
-run-name: ${{ github.actor }} is running .NET Build And Test
+run-name: @${{ github.actor }} is running .NET Build And Test
 
 on:
   push:
@@ -20,10 +20,13 @@ jobs:
         run: |
           echo $GITHUB_CONTEXT
       - name: Print secrets context
+        env:
+          SECRETS_CONTEXT: ${{ toJSON(secrets) }}
         run: |
-          echo ${{ toJSON(secrets) }}
+          echo ${{ SECRETS_CONTEXT }}
 
   build-and-test:
+    needs: print-context
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
