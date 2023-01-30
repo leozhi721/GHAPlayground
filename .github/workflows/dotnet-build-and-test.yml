@@ -11,10 +11,17 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  print-context:
     runs-on: ubuntu-latest
+    steps:
+      - name: Print github context
+        env:
+          EVENT_CONTEXT: ${{ toJSON(github) }}
+        run: |
+          echo $EVENT_CONTEXT
 
+  build-and-test:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
